@@ -40,4 +40,4 @@ además de ir cambiando de color.
 -La animación del texto de I.E.S.Ciudad Escolar te desea una Feliz Navidad 2020 que hace el efecto de estar en movimiento y de desaparecer,y después vuelve desde el comienzo a repetir la acción.
 -La animación del texto del autor que hace el efecto de cambio de color de negro a morado y además hace un tipo de efecto de estar saltando.
 
-![img]()
+![img](https://github.com/javiCE98/Animaci-n-navide-a/blob/master/img/CapturaPagina.PNG?raw=true)
