@@ -1,0 +1,372 @@
+ @font-face {
+            font-family:arial;
+            src: url('Candcu__.ttf');
+          }
+
+/*body{
+    background-color: black;
+ 
+}
+*/
+html {
+    height: 100%;
+    background: linear-gradient(black);
+    overflow: hidden;
+    animation-name:html;
+    animation-duration:12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-style: preserve-3d;
+  }
+
+  @keyframes html{
+        from{background-color:lightblue;}
+        to{background-color:black;}
+
+  }
+
+  .snow, .snow:before, .snow:after {
+    position: fixed;
+    top: -600%;
+    left: 0;
+    bottom:10%;
+    right: 0;
+    background-image: radial-gradient(0.18em 0.18em at 25.7em 8.68em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.37em 0.37em at 19.94em 430.12em, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 6.31em 11.56em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.37em 0.37em at 30.25em 17.50em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 15.93em 27.12em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.25em 0.25em at 25.68em 1.37em, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.31em 0.31em at 13.25em 22.87em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.31em 0.31em at 19.43em 19.62em, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.25em 0.25em at 22.12em 36.25em, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.37em 0.37em at 11.31em 15.31em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.37em 0.37em at 4em 29.12em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.31em 0.31em at 16.75em 25.62em, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 24.93em 7.93em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.25em 0.25em at 29.75em 19.93em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.31em 0.31em at 15.56em 6.18em, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.25em 0.25em at 17.43em 18.68em, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.25em 0.25em at 27.93em 20.81em, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.37em 0.37em at 11.12em 17.93em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.37em 0.37em at 1.93em 23.75em, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.37em 0.37em at 1em 26.81em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.25em 0.25em at 28.81em 19.62em, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 35.31em 10.75em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.31em 0.31em at 16.43em 4.75em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.31em 0.31em at 12.68em 21.18em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.37em 0.37em at 3.75em 31.25em, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.31em 0.31em at 36.93em 7.12em, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 21.75em 30.50em, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.37em 0.37em at 14.37em 36.12em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 12.06em 18.5em, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.25em 0.25em at 21.68em 29.93em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 25.18em 30.25em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 24.37em 10.81em, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 31.18em 14.87em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 23.68em 19.06em, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.25em 0.25em at 36.81em 22.18em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.25em 0.25em at 30em 7.75em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.37em 0.37em at 5.50em 18.18em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.37em 0.37em at 6.18em 13.50em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.31em 0.31em at 28.56em 3.18em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.37em 0.37em at 30.06em 7em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 28.12em 33em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 3.50em 5.12em, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.31em 0.31em at 24.62em 8.37em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.25em 0.25em at 13.68em 2em, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.31em 0.31em at 29.31em 19.56em, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.31em 0.31em at 12.56em 17.93em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), 
+    radial-gradient(0.25em 0.25em at 26.56em 21.12em, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 6.75em 32.68em, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), 
+    radial-gradient(0.25em 0.25em at 29.68em 10.06em, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 9.62em 11.75em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.31em 0.31em at 11.68em 30.81em, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.25em 0.25em at 32.25em 34.37em, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.31em 0.31em at 29.87em 13em, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 18.75em 1.18em, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.31em 0.31em at 21.06em 23.87em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 33.18em 6.43em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.25em 0.25em at 23.93em 26.68em, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 30.68em 34.62em, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.25em 0.25em at 17.35em 26.25em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.37em 0.37em at 33.56em 31.43em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 34.18em 1.87em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.25em 0.25em at 18.43em 24.62em, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.31em 0.31em at 13.18em 12.25em, white 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.37em 0.37em at 9.25em 22.87em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.37em 0.37em at 6.62em 29.93em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 32.12em 24.68em, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.25em 0.25em at 35.62em 6em, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.31em 0.31em at 3.81em 18.62em, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.25em 0.25em at 16.50em 1.87em, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)),
+    radial-gradient(0.18em 0.18em at 4.81em 10.62em, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0));
+    background-size: 37.50em 37.50em;
+    animation: snow 6s linear infinite;
+    transform-style: preserve-3d;
+    /*content: "";*/
+  }
+  .snow:after {
+    margin-left: -12.50em;
+    opacity: 0.4;
+    animation-duration: 6s;
+    animation-direction: reverse;
+    filter: blur(0.18em);
+    transform-style: preserve-3d;
+  }
+  .snow:before {
+    animation-duration: 9s;
+    animation-direction: reverse;
+    margin-left: -18.75em;
+    opacity: 0.65;
+    filter: blur(0.09em);
+    transform-style: preserve-3d;
+  }
+  @keyframes snow {
+    to {
+      transform: translateY(37.50em);
+    }
+  }
+ 
+  .miBoton{
+    position: fixed;
+    right:2%;
+    width:5%;
+    height:7%;
+    top:55.7%;
+    left:45%;
+    padding-bottom:0%;
+    font-weight:bold;
+    font-family:fantasy;
+    font-size:0.7vw;
+
+  }
+  .miBoton a{
+    text-decoration:none;
+    
+
+  }
+  .miBoton:hover{
+    background-color:green;
+    color:blue;
+    width:7%;
+    height:9%;
+  }
+  .miBoton:hover a{
+    font-size:1vw;
+  }
+
+ 
+
+  .city{
+    position: fixed;
+    right:0%;
+    width:30%;
+    height:40%;
+    top:36%;
+    margin-left:45%;
+    padding-bottom:0%;
+
+    
+  }
+  .christmas{
+      color:blue;
+      font-size:8vw;
+      position: fixed;
+      top:-15%;
+      left:25%;
+      animation-name:christmas;
+      animation-duration:5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      
+  }
+  .miNombre{
+      color:black;
+      font-size:1.5vw;
+      position: fixed;
+      top:95%;
+      left:40%;
+      font-weight:bold;
+      animation-name:miNombre;
+      animation-duration: 1.5s;
+      animation-iteration-count:infinite;
+      animation-timing-function: ease;
+      animation-delay: 0s;
+      animation-direction: normal;
+      transform-style: preserve-3d;
+     
+  }
+  @keyframes miNombre{
+    from {color: black;}
+    to {color:#001C4A;}  
+    to{color: #5E024F;}
+    0%{
+      transform: translateY(0);
+      transform: translateY(0);
+    }
+    20%{
+      transform: translateY(0);
+      transform: translateY(0);
+    }
+    40%{
+      transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    50%{
+      transform: translateY(0);
+      transform: translateY(0);
+    }
+    60%{
+      transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+    80%{
+      transform: translateY(0);
+      transform: translateY(0);
+    }
+    100%{
+      transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  .tree{
+      position:fixed;
+      left:15%;
+      top:38%;
+      width:15%;
+      height:40%;
+
+  }
+
+
+
+  .ies{
+      color:red;
+      font-size:2.5vw;
+      position: relative;
+      top:35%;
+      left:0%;
+      font-weight:bold;
+      font-family:arial;
+      animation-name:ies;
+      animation-duration:10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      
+
+  }
+  @keyframes ies{
+  0%   {left:0%;top:35%;}
+  10%  {left:10%;top:35%;}
+  20%  {left:20%;top:35%;}
+  30%  {left:30%;top:35%;}
+  40%  {left:40%;top:35%;}
+  50%  {left:50%;top:35%;}
+  60%  {left:60%;top:35%;}
+  70%  {left:70%;top:35%;}
+  80%  {left:80%;top:35%;}
+  90%  {left:90%;top:35%;}
+  100%  {left:100%;top:35%;}
+
+  }
+
+
+  @keyframes christmas{
+      from {color: blue;}
+      to {color: yellow;}  
+      to{color: green;}
+      to{color: red;}
+      from { transform: none; }
+      50% { transform: scale(1.4); }
+      to { transform: none; }
+
+
+  }
+  .snowman{
+    position: fixed;
+    right:2%;
+    width:12%;
+    height:21%;
+    top:54.7%;
+    left:35%;
+    padding-bottom:0%;
+  }
+
+  .papaNoel{
+    position: fixed;
+    right:2%;
+    width:22%;
+    transform:rotate(-10deg);
+    height:21%;
+    top:12%;
+    left:65%;
+    padding-bottom:0%;
+    animation-name:papaNoel;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    
+  }
+  @keyframes papaNoel{
+   
+    100%  {left:100%;top:12%;}
+    90%  {left:90%;top:12%;}
+    80%  {left:80%;top:12%;}
+    70%  {left:70%;top:12%;}
+    60%  {left:60%;top:12%;}
+    50%  {left:50%;top:12%;}
+    40%  {left:40%;top:15%;}
+    30%  {left:30%;top:18%;}
+    30%  {left:20%;top:21%;}
+    10%  {left:10%;top:23%;}
+    0%  {left:0%;top:25%;}
+   
+        
+  }
+
+  .alumno{
+    position: fixed;
+    right:2%;
+    width:12%;
+    height:21%;
+    top:54.7%;
+    left:55%;
+    padding-bottom:0%; 
+
+  }
+ 
+
+ 
+
+  .circulo{
+    position:fixed;
+    width:10vw;
+    height:10vw;
+    border-radius: 50%;
+    top:2%;
+    margin-left:5%;
+    background: white;
+    animation-name:circulo;
+    animation-duration:12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+  }
+  @keyframes circulo{
+    from{background-color:yellow;}
+    to{background-color:white;}
+  }
+  .soporte{
+    position:fixed;
+    left:0%;
+    bottom:0%;
+    width:100%;
+    height:25.5%;
+    background-color:white;
+    margin-top:22.2%;
+  }
+
+
+  
